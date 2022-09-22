@@ -1,0 +1,24 @@
+<html>
+<head>
+<style>
+	.myNewClassName {
+		background-color: blue;
+        }
+</style>
+<script language="JavaScript">
+	function changeStuff() {
+		thingToChange = document.getElementById("poem");
+		thingToChange.className = "myNewClassName";
+	}
+	function clearChange() {
+		thingToChange = document.getElementById("poem");
+		thingToChange.className = "";
+	}
+</script>
+<body>
+
+	<p id="poem">stuff</p>
+	<button onclick="javascript:changeStuff()">Click Here</button>
+	<button onclick="javascript:clearChange()">Undo Here</button>
+</body>
+</html>
